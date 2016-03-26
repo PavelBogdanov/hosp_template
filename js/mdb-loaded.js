@@ -22,6 +22,7 @@ function scaleBannerVideoSize(t) {
     })
 }
 
+
 function upTo(t, e) {
     for (e = e.toLowerCase(); t && t.parentNode;)
         if (t = t.parentNode, t.tagName && t.tagName.toLowerCase() == e) return t;
