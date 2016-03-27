@@ -323,7 +323,7 @@ right:0;
     color: black;
 }
 .personalize {
-    left: -20rem;
+    left: -10rem;
     width: 30rem;
     position: relative;
     float:left;
@@ -364,4 +364,13 @@ right:0;
 }
 .main {
     margin-top:70px;
+}
+.left {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.right {
+    position: relative;
+    
 }
