@@ -374,3 +374,19 @@ right:0;
     position: relative;
     
 }
+p .text {
+    float: right;
+}
+
+td  p.title {
+    margin:0;
+    padding: 0;
+}
+.receipt {
+left: 50%;
+right: 50%;
+}
+.prim {
+    left: 50%;
+    right: 50%;
+}

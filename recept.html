@@ -32,17 +32,17 @@
 <body>    
     <!-- Sidebar navigation -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
-        <div class="hold-place">
-            <p class="text-center white-text">Разделы</p>
+        <div class="hold-place text-center white-text">
+                    <a href="index_hosp.html" class="waves-effect">Разделы</a>
         </div>
 
         <!-- Side navigation links -->
         <ul class="collapsible collapsible-accordion">
-            <li><a href="personal.html" class="waves-effect waves-light">Персональные данные</a></li>
-            <li><a href="elcard.html" class="waves-effect waves-light">Посмотреть карту</a></li>
+            <li><a href="#" class="active waves-effect waves-light">Персональные данные</a></li>
+            <li><a href="#" class="waves-effect waves-light">Посмотреть карту</a></li>
             <li><a href="#" class="waves-effect waves-light">Найти обследование</a></li>
             <li><a href="#" class="waves-effect waves-light">Записать на доп обследование</a></li>
-            <li><a href="recept.html" class="waves-effect waves-light">Выписать рецепт</a></li>
+            <li><a href="#" class="waves-effect waves-light">Выписать рецепт</a></li>
         </ul>
             <form class="search-from" role="search">
                 <div class="form-group">
@@ -84,101 +84,82 @@
     
     <!--MAIN PART-->
     <div class="main container">
-        <div class="breadcrumps text-center">
-            <h4>Главное меню врача</h4>
-        </div>
-        <div class="row first">
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="personal.html">
-                    <div class="card hoverable">
-                         <div class="caption text-center">
-                             <h5>Личные </br> данные</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_person_outline_black_48dp.png" height="100px">
-                        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-xs-6 receipt">
+                <div class="top-left">
+                    <h5>Оформление рецепта</h5>
+                </div>
+                  <table class="table">
+                      <thead>
+                        <th colspan="2">20 апреля 2016г  </th>
+                          <th>№0032355</th>
+                      </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td colspan="4">
+                            <p class="title">Данные пациента:</p></td>
+                        </tr>
+                        <tr>
+                            <td><b>Фамилия:</b> Иванова</td>
+                            <td><b>Имя:</b> Анастасия</td>
+                            <td><b>Отчество:</b> Сергеевна</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Возраст: 35</td>
+                            <td></td> 
+                        </tr>
+                         
+                        
+                        <tr>
+                            <td></td>
+                            <td colspan="4">
+                                <p class="title">Ф.И.О. лечащего врача:</p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td><b>Фамилия:</b> Волненков</td>
+                            <td><b>Имя:</b> Артём</td>
+                            <td><b>Отчество:</b> Штеинович</td>
+                        </tr>
                        
+                      <tr>
+                            <td>Руб:</td>
+                            <td>Коп:</td>
+                            <td>Rp:</td>
+                        </tr>
+                        <tfoot>
+                          <tr>
+                                <td colspan="8">
+                                    <form>
+                                        <textarea placeholder="Введите рецептуру"></textarea>
+                                    </form>
+
+                                </td>
+                            </tr>
+                      </tfoot>               
+                        
+                        
+                    </tbody>
+            </table>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-6 prim">
+                 <p>Примечания:</p>
+                <form method="post">
+                    <textarea placeholder="Введите Примечания"></textarea>
+                    <div class="text-center">
+                        <button  class="btn  waves-light"> Печать</button>
                     </div>
                     
-                </a>
+                </form>
+                
             </div>
-            
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="diagnostic.html">
-                     <div class="card hoverable">
-                        <div class="caption text-center">
-                            <h5>Результаты </br>обследований</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_description_black_48dp.png" height="100px">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-        <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="diagnostic.html">
-                     <div class="card hoverable">
-                        <div class="caption text-center">
-                            <h5>Направление на </br>обследование</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_assignment_returned_black_48dp.png" height="100px">
-                        </div>
-                     </div>  
-                </a>       
         </div>
-    
-    <!--Second line-->
-  
-    
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="personal.html">
-                    <div class="card hoverable">
-                         <div class="caption text-center">
-                             <h5>Распечатать </br> бланки</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_print_black_48dp.png" height="100px">
-                        </div>
-                       
-                    </div>
-                    
-                </a>
-            </div>
-            
-        <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="diagnostic.html">
-                     <div class="card hoverable">
-                        <div class="caption text-center">
-                            <h5>Запись в</br>карту</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_edit_black_48dp.png" height="100px">
-                        </div>
-                     </div>  
-                </a>       
-        </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <a href="diagnostic.html">
-                     <div class="card hoverable">
-                        <div class="caption text-center">
-                            <h5>Результаты </br>обследований</h5>
-                        </div>
-                        <div class="image text-center">
-                            <img src="images/ic_description_black_48dp.png" height="100px">
-                        </div>
-                    </div>
-                </a>
-            </div>
-     </div>
-       
-<!--./END Second line-->
-</div>
- <!--./MAIN PART-->
-
-<!--FOOTER START-->
+    </div>
+    <!--./MAIN PART-->
+    <!--FOOTER START-->
 <footer class="navbar navbar-fixed-bottom unique-color-dark">
     <div class="container">
         <div class="row white-text">
@@ -195,8 +176,6 @@
     </div>
 </footer>
 <!--./FOOTER ENDS-->
-
-
 
     
     
