@@ -20,7 +20,7 @@
 
     <!-- Material Design Bootstrap
     <link href="css/mdb.css" rel="stylesheet"> -->
-    
+
     <!-- Material Design Bootstrap Remastered-->
     <link href="css/mdb.min.css" rel="stylesheet">
 
@@ -29,31 +29,31 @@
 
 </head>
 
-<body>    
+<body>
     <!-- Sidebar navigation -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
-        <div class="hold-place text-center white-text">
-                    <a href="index_hosp.html" class="waves-effect">Разделы</a>
+        <div class="hold-place">
+            <p class="text-center white-text">Разделы</p>
         </div>
 
         <!-- Side navigation links -->
         <ul class="collapsible collapsible-accordion">
-            <li><a href="personal.html" class="active waves-effect waves-light">Персональные данные</a></li>
-            <li><a href="elcard.html" class="waves-effect waves-light">Посмотреть карту</a></li>
-            <li><a href="#" class="waves-effect waves-light">Найти обследование</a></li>
+            <li><a href="personal.html" class="waves-effect waves-light">Персональные данные</a></li>
+            <li><a href="№" class="waves-effect waves-light">Посмотреть карту</a></li>
+            <li><a href="elcard_obls.html" class="waves-effect waves-light">Найти обследование</a></li>
             <li><a href="#" class="waves-effect waves-light">Записать на доп обследование</a></li>
-            <li><a href="#" class="waves-effect waves-light">Выписать рецепт</a></li>
+            <li><a href="recept.html" class="waves-effect waves-light">Выписать рецепт</a></li>
         </ul>
             <form class="search-from" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Поиск">
                 </div>
-                
+
             </form>
         <!--/. Side navigation links -->
     </ul>
-    <!--/. Sidebar navigation -->   
-    
+    <!--/. Sidebar navigation -->
+
      <!--Navbar-->
     <nav class="double-navbar navbar navbar-fixed-top unique-color-dark z-depth-1" role="navigation">
         <div class="container-fluid">
@@ -67,7 +67,7 @@
             <!-- Navbar Icons -->
             <ul class="list-inline pull-right text-center">
                 <div class="personalize pull-left">
-                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle"> 
+                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle">
                     <p class="user white-text"><b>Волненков Артём Штейнович</b><br><span>Врач терапевт</span></p>
                 </div>
 
@@ -80,87 +80,17 @@
         </div>
     </nav>
     <!--/.Navbar-->
-    
-    
-    <!--MAIN PART-->
+
+
+  <!--MAIN PART-->
     <div class="main container">
-        <div class="row">
-            <div class="text-center">
-                    <h5>Оформление рецепта</h5>
-                </div>
-            <div class="col-lg-4 col-md-6 col-xs-6 receipt">
-
-                  <table class="table">
-                      <thead>
-                        <th colspan="2">20 апреля 2016г</th>
-                          <th>№0032355</th>
-                      </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td colspan="4">
-                            <p class="title">Данные пациента:</p></td>
-                        </tr>
-                        <tr>
-                            <td><b>Фамилия:</b> Иванова</td>
-                            <td><b>Имя:</b> Анастасия</td>
-                            <td><b>Отчество:</b> Сергеевна</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">Возраст: 35</td>
-                            <td></td> 
-                        </tr>
-                         
-                        
-                        <tr>
-                            <td></td>
-                            <td colspan="4">
-                                <p class="title">Ф.И.О. лечащего врача:</p>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td><b>Фамилия:</b> Волненков</td>
-                            <td><b>Имя:</br></b> Артём</td>
-                            <td><b>Отчество:</b> Штеинович</td>
-                        </tr>
-                       
-                      <tr>
-                            <td>Руб:</td>
-                            <td>Коп:</td>
-                            <td>Rp:</td>
-                        </tr>
-                        <tfoot>
-                          <tr>
-                                <td colspan="8">
-                                    <form>
-                                        <textarea placeholder="Введите рецептуру"></textarea>
-                                    </form>
-
-                                </td>
-                            </tr>
-                      </tfoot>               
-                        
-                        
-                    </tbody>
-            </table>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-xs-6 prim">
-                 <p>Примечания:</p>
-                <form method="post">
-                    <textarea placeholder="Введите Примечания"></textarea>
-                    <div class="text-center">
-                        <button  class="btn  waves-light"> Печать</button>
-                    </div>
-                    
-                </form>
-                
-            </div>
+        <div class="breadcrumps text-center">
+            <h4>Направление на обследование</h4>
         </div>
     </div>
-    <!--./MAIN PART-->
-    <!--FOOTER START-->
+ <!--./MAIN PART-->
+
+<!--FOOTER START-->
 <footer class="navbar navbar-fixed-bottom unique-color-dark">
     <div class="container">
         <div class="row white-text">
@@ -178,8 +108,10 @@
 </footer>
 <!--./FOOTER ENDS-->
 
-    
-    
+
+
+
+
      <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -193,7 +125,7 @@
     <script>
  // Initialize collapse button
   $(".button-collapse").sideNav();
-  // Initialize collapsible 
+  // Initialize collapsible
   $('.collapsible').collapsible();
 </script>
 </body>

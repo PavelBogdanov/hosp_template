@@ -381,12 +381,17 @@ p .text {
 td  p.title {
     margin:0;
     padding: 0;
+    text-align: left;
 }
 .receipt {
-left: 10%;
+left: 15%;
 right: 50%;
 }
 .prim {
-    left: 10%;
+    left: 15%;
     right: 50%;
+}
+.prim textarea {
+    height: 20rem;
+    width: 100%;
 }
