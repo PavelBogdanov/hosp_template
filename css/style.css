@@ -395,3 +395,12 @@ right: 50%;
     height: 20rem;
     width: 100%;
 }
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.form-inline {
+margin-bottom: 1rem;
+}
