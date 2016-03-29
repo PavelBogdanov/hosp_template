@@ -404,3 +404,24 @@ right: 50%;
 .form-inline {
 margin-bottom: 1rem;
 }
+.obsledovanie form {
+    padding: 0;
+    margin: 0;
+}
+.obsledovanie label {
+    padding: 0;
+    padding-top: 0.5rem
+}
+
+input[type=date]{
+    height: 2rem;
+    margin: 0;
+}
+hr {
+    margin:0;
+    padding: 0;
+}
+.header > span {
+    padding-top: 0.5rem;
+    float: right;
+}
