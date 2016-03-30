@@ -435,3 +435,6 @@ hr {
 .noresult > a, .noresult > div.date {
     margin-top: 5px;
 }
+.thumbnail h5 {
+    height: 20rem;
+}
