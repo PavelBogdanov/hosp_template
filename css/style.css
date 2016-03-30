@@ -426,3 +426,12 @@ hr {
     float: right;
 }
 
+.breadcrumps {
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    left: 8rem;
+}
+.noresult > a, .noresult > div.date {
+    margin-top: 5px;
+}

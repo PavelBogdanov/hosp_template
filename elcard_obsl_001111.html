@@ -33,7 +33,7 @@
     <!-- Sidebar navigation -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
         <div class="hold-place">
-            <a href="index_hosp.html" class="waves-effect">Разделы</a>
+           <a href="index_hosp.html" class="waves-effect">Разделы</a>
         </div>
 
         <!-- Side navigation links -->
@@ -83,59 +83,86 @@
 
 
   <!--MAIN PART-->
-    <div class="main container">
+    <div class="main container fluid">
          <div class="breadcrumps">
                 <a href="index_hosp.html"><i class="fa fa-arrow-left"> Главная</i></a>
             </div>
 
-        <div class="header text-center">
-            <h5>Направление на обследование</h5>
-        </div>
-
-        <div class="col-md-6 col-md-offset-3">
-                <table class="table">
-                    <tr>
-                        <td>Медицинская карта №:</td><td><span>3501301</span></td>
-
-                    </tr>
-
-                    <tr>
-                        <td><b>Фамилия: </b><span>Иванова</span></td>
-                        <td><b>Имя: </b><span>Анастасия</span></td>
-                        <td><b>Отчество: </b><span>Сергеевна</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Диагноз:</td>
-                         <td colspan="2">
-                            <textarea>Воспаление слизистой оболочки</textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Направлен:</td>
-                         <td colspan="2">
-                            <textarea>В диагностический центр</textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Для:</td>
-                         <td colspan="2">
-                            <textarea>Проведения полного обследования пищеварительной системы</textarea>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Дата</td>
-                        <td>20 апреля 2016г</td>
-                        <td>
-                            <a href="send.php">Оформить</button>
-                        </td>
-                    </tr>
-                </table>
+         <div class="header text-center">
+            <h5>Результаты обследований</h5>
         </div>
     </div>
+
+    <hr>
+    <div class="container obsledovanie">
+    <!--Форма поиска обследования-->
+        <form class="form-inline obsledovanie col-lg-12">
+                <div class="form-group col-lg-4 ">
+                    <label for="i1" class="col-xs-4 control-label ">Поиск по врачам:</label>
+                     <div class="col-xs-4">
+                      <select class="form-control input-sm">
+                        <option>Терапевт</option>
+                        <option>Психиатр</option>
+                        <option>Нарколог</option>
+                        <option>Невролог</option>
+                        <option>Офтальмолог</option>
+                        <option>Отоларинголог</option>
+                        <option>Хирург</option>
+                        <option>Дерматовенеролог</option>
+                        <option>Эндокринолог</option>
+                        <option>Акушер-инеколог</option>
+                      </select>
+                    </div>
+                </div>
+
+             <div class="form-group col-lg-5">
+                    <label for="i1" class="col-xs-6 control-label ">Поиск по Обследованиям:</label>
+                     <div class="col-xs-4">
+                      <select class="form-control input-sm">
+                        <option>Клинический анализ крови</option>
+                        <option>Биохимический скрининг</option>
+                        <option>Клинический анализ мочи</option>
+                        <option>Электрокардиография</option>
+                        <option>Цифровая флюорография</option>
+                        <option>Рентгенография</option>
+                        <option>Бактериологическое</option>
+                        <option>Цитологическое</option>
+                        <option>Маммография</option>
+                      </select>
+                    </div>
+            </div>
+
+             <div class="form-group col-lg-3">
+                <label for="i1" class="col-xs-5 control-label">Поиск по дате:</label>
+                    <div class="col-xs-7">
+                        <input type="date" class="datepicker">
+                    </div>
+                </div>
+
+
+            </form>
+        <!--./Форма поиска обследования-->
+    </div>
+    <hr>
+    <!--Oбследование-->
+    <div class="container">
+        <div class="col-lg-6">
+            <div class="row noresult">
+                <h6 class="col-lg-2 col-md-3 col-xs-3"><b>Электрокардиография</b></h6>
+                <a class="col-xs-3 col-md-2 col-lg-2" href="index_hosp.html">Назад к списку</a>
+                <div class="date">Дата: 08.02.2016</div>
+
+                <div class="col-lg-2 col-md-2 col-xs-1 number">№001111</div>
+            </div>
+
+            <div class="row thumbnail">
+                <h5>Нет данных</h5>
+            </div>
+        </div>
+
+
+    </div>
+    <!--./Oбследование-->
  <!--./MAIN PART-->
 
 <!--FOOTER START-->
@@ -176,6 +203,14 @@
   // Initialize collapsible
   $('.collapsible').collapsible();
 </script>
+
+
+<script> $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });</script>
+
+
 </body>
 
 </html>
