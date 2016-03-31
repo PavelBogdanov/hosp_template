@@ -33,7 +33,7 @@
     <!-- Sidebar navigation -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
         <div class="hold-place">
-            <a href="index-trial.html" class="waves-effect">Разделы</a>
+           <a href="index-trial.html" class="waves-effect">Разделы</a>
         </div>
 
         <!-- Side navigation links -->
@@ -83,89 +83,60 @@
 
 
   <!--MAIN PART-->
-    <div class="main container">
+    <div class="main container fluid">
          <div class="breadcrumps">
-                <a href="#"><i class="fa fa-arrow-left"> Все записи</i></a>
+                <a href="index-trial.html"><i class="fa fa-arrow-left"> Главная</i></a>
             </div>
 
-        <div class="header text-center">
-            <h5>Запись в карту</h5>
-        </div>
-
-            <form class="form-inline col-lg-12">
-                <div class="form-group left col-lg-2 text-right">
-                    <label for="i1" class="col-xs-2 control-label ">Дата:</label>
-                    <div class="col-xs-6 col-lg-4">
-                     26 марта 2016 г
-                    </div>
-                </div>
-
-                <div class="form-group right col-lg-6">
-                    <label for="i1" class="col-xs-6 control-label">Временная нетрудоспособность с:</label>
-                    <div class="col-lg-3">
-                     <input type="date" placeholder="20/10/2016">
-                    </div>
-                </div>
-            </form>
-                <form class="form-horizontal col-lg-12">
-                  <div class="form-group">
-                    <label for="a1" class="col-xs-2 control-label">Жалобы на состояние:</label>
-                    <div class=" col-lg-10">
-                     <textarea id="a1" class="waves"></textarea>
-                    </div>
-                  </div>
-
-                    <div class="form-group">
-                        <label for="a2" class="col-xs-2 control-label">Проведённое обследование и лечение:</label>
-                        <div class="col-lg-10">
-                          <textarea id="a2"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="a2" class="col-xs-2 control-label">Диагноз основного заболевания:</label>
-                        <div class="col-md-8">
-                          <textarea id="a2"></textarea>
-                        </div>
-
-                         <label for="mkb10" class="col-xs-1 control-label">Код по МКБ-10:</label>
-                        <div class="col-xs-1">
-                          <textarea id="mkb10"></textarea>
-                        </div>
-                    </div>
-
-                     <div class="form-group">
-                        <label for="a2" class="col-xs-2 control-label">Осложнения:</label>
-                        <div class="col-lg-10">
-                          <textarea id="a2"></textarea>
-                        </div>
-                    </div>
-
-                     <div class="form-group">
-                        <label for="a2" class="col-xs-2 control-label">Сопутствующие заболевания:</label>
-                        <div class="col-lg-8">
-                          <textarea id="a2"></textarea>
-                        </div>
-
-                        <label for="mkb10" class="col-xs-1 control-label">Код по МКБ-10:</label>
-                        <div class="col-xs-1">
-                          <textarea id="mkb10"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="a2" class="col-xs-2 control-label">Рекоммендации по дальнейщему наблюдению:</label>
-                        <div class="col-lg-8">
-                          <textarea id="a2"></textarea>
-                        </div>
-
-                        <div class="col-xs-2 col-xs-1">
-                            <button type="submit" class="btn">Сохранить</button>
-                        </div>
-                    </div>
-                </form>
+         <div class="header text-center">
+            <h5>Список пациентов</h5>
         </div>
     </div>
+
+    <hr>
+    <div class="container">
+        <!--Таблица с пациентами-->
+        <div class="col-lg-5 col-md-6  col-sm-8 thumbnail col-md-offset-4">
+             <table class="table">
+                <thead>
+                    <tr>
+                        <td>Статус</td><td>Время</td><td>ФИО пациента</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa fa-check"></i></td><td>9:00</td><td><a>Сергеев Иван Викторович</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-check"></i></td><td>9:20</td><td><a>Старейников Василий Петрович</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td><i class="fa fa-stethoscope"></i></td><td>9:40</td><td><a>Иванова Анастасия Сергеевна</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td>10:00</td><td><a>Успенская Инна Романовна</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td>10:20</td><td><a>Токарев Иван Геннадьевич</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td>10:40</td><td><a>Меркулова Ольга Игоревна</a></td>
+                    </tr>
+                </tbody>
+                 <tfoot>
+                    <tr>
+                        <td><b>Всего:</b></td><td colspan="3">6</td>
+                    </tr>
+                      <tr>
+                        <td><b>Принято:</b></td><td colspan="3">2</td>
+                    </tr>
+                 </tfoot>
+            </table>
+        </div>
+           <!--./Таблица с пациентами-->
+
+    </div>
+    <hr>
  <!--./MAIN PART-->
 
 <!--FOOTER START-->
@@ -174,7 +145,7 @@
         <div class="row white-text">
             <div class="left">
                 <h5 class="curdate">26 марта 2016 г</h5>
-                <h6 class="curdate">Время: <span><i>12:34:12</i></span></h6>
+                <h6 class="curdate">Время: <span><i>9:44:12</i></span></h6>
                 <h6 class="lasttime">До окончания приёмного дня осталось: <span><i>1:40:30</i></span></h6>
             </div>
             <div  class="right">
@@ -206,6 +177,14 @@
   // Initialize collapsible
   $('.collapsible').collapsible();
 </script>
+
+
+<script> $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });</script>
+
+
 </body>
 
 </html>

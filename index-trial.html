@@ -20,7 +20,7 @@
 
     <!-- Material Design Bootstrap
     <link href="css/mdb.css" rel="stylesheet"> -->
-    
+
     <!-- Material Design Bootstrap Remastered-->
     <link href="css/mdb.min.css" rel="stylesheet">
 
@@ -29,7 +29,7 @@
 
 </head>
 
-<body>    
+<body>
     <!-- Sidebar navigation -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
         <div class="hold-place">
@@ -49,12 +49,12 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Поиск">
                 </div>
-                
+
             </form>
         <!--/. Side navigation links -->
     </ul>
-    <!--/. Sidebar navigation -->   
-    
+    <!--/. Sidebar navigation -->
+
      <!--Navbar-->
     <nav class="double-navbar navbar navbar-fixed-top unique-color-dark z-depth-1" role="navigation">
         <div class="container-fluid">
@@ -68,7 +68,7 @@
             <!-- Navbar Icons -->
             <ul class="list-inline pull-right text-center">
                 <div class="personalize pull-left">
-                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle"> 
+                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle">
                     <p class="user white-text"><b>Волненков Артём Штейнович</b><br><span>Врач терапевт</span></p>
                 </div>
 
@@ -81,100 +81,147 @@
         </div>
     </nav>
     <!--/.Navbar-->
-    
-    
+
+
     <!--MAIN PART-->
     <div class="main container">
         <div class="header text-center">
             <h5>Главное меню врача</h5>
         </div>
-        <div class="row first">
-            <div class="col-sm-6 col-md-4 col-lg-4">
+
+        <!--Таблица с пациентами-->
+        <div class="col-lg-5 col-md-6  col-sm-8 thumbnail">
+             <table class="table">
+                <thead>
+                    <tr><td>Сегодня</td></tr>
+                    <tr>
+                        <td>Статус</td><td class="date">Время</td><td>ФИО пациента</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa fa-check"></i></td><td class="date">9:00</td><td><a>Сергеев Иван Викторович</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-check"></i></td><td class="date">9:20</td><td><a>Старейников Василий Петрович</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td><i class="fa fa-stethoscope"></i></td><td class="date">9:40</td><td><a>Иванова Анастасия Сергеевна</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td class="date">10:00</td><td><a>Успенская Инна Романовна</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td class="date">10:20</td><td><a>Токарев Иван Геннадьевич</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-clock-o"></i></td><td class="date">10:40</td><td><a>Меркулова Ольга Игоревна</a></td>
+                    </tr>
+                </tbody>
+                 <tfoot>
+                    <tr>
+                        <td><b>Всего:</b></td><td colspan="3">6</td>
+                    </tr>
+                      <tr>
+                        <td><b>Принято:</b></td><td colspan="3">2</td>
+                    </tr>
+                 </tfoot>
+            </table>
+        </div>
+           <!--./Таблица с пациентами-->
+        <div class="col-lg-6 thumbnail search">
+            <div class="col-lg-3"><h6>Найти пациента:</h6></div>
+            <div class="col-lg-3"><input type="date" placeholder="24/03/2016"/></div>
+            <div class="col-lg-3"><input type="text" placeholder="Фамилия"/></div>
+
+            <div class="col-lg-1"><button type="button" class="btn-link"><i class="fa fa-search"></i></button></div>
+
+            </div>
+
+        <div class="row doctormenu">
+            <div class="col-sm-4 col-md-3 col-lg-2">
                 <a href="personal.html">
                     <div class="card hoverable">
                          <div class="caption text-center">
-                             <h5>Личные </br> данные</h5>
+                             <h6>Личные </br> данные</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_person_outline_black_48dp.png" height="100px">
+                            <img src="images/ic_person_outline_black_48dp.png" height="80px">
                         </div>
-                       
+
                     </div>
-                    
+
                 </a>
             </div>
-            
-            <div class="col-sm-6 col-md-4 col-lg-4">
+
+            <div class="col-sm-6 col-md-3 col-lg-2">
                 <a href="elcard_obsl.html">
                      <div class="card hoverable">
                         <div class="caption text-center">
-                            <h5>Результаты </br>обследований</h5>
+                            <h6>Результаты </br>обследований</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_description_black_48dp.png" height="100px">
+                            <img src="images/ic_description_black_48dp.png" height="80px">
                         </div>
                     </div>
                 </a>
             </div>
-            
-        <div class="col-sm-6 col-md-4 col-lg-4">
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
                 <a href="todiagnostic.html">
                      <div class="card hoverable">
                         <div class="caption text-center">
-                            <h5>Направление на </br>обследование</h5>
+                            <h6>Направление на </br>обследование</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_assignment_returned_black_48dp.png" height="100px">
+                            <img src="images/ic_assignment_returned_black_48dp.png" height="80px">
                         </div>
-                     </div>  
-                </a>       
+                     </div>
+                </a>
         </div>
-    
-    <!--Second line-->
-  
-    
-            <div class="col-sm-6 col-md-4 col-lg-4">
+
+            <div class="col-sm-6 col-md-3 col-lg-2">
                 <a href="recept.html">
                     <div class="card hoverable">
                          <div class="caption text-center">
-                             <h5>Распечатать </br> бланки</h5>
+                             <h6>Оформить </br> Рецепт</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_print_black_48dp.png" height="100px">
+                            <img src="images/ic_print_black_48dp.png" height="80px">
                         </div>
-                       
+
                     </div>
-                    
+
                 </a>
             </div>
-            
-        <div class="col-sm-6 col-md-4 col-lg-4">
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
                 <a href="input.html">
                      <div class="card hoverable">
                         <div class="caption text-center">
-                            <h5>Запись в</br>карту</h5>
+                            <h6>Запись в</br>карту</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_edit_black_48dp.png" height="100px">
+                            <img src="images/ic_edit_black_48dp.png" height="80px">
                         </div>
-                     </div>  
-                </a>       
+                     </div>
+                </a>
         </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="col-sm-6 col-md-3 col-lg-2">
                 <a href="elcard_obsl.html">
                      <div class="card hoverable">
                         <div class="caption text-center">
-                            <h5>Результаты </br>обследований</h5>
+                            <h6>Результаты </br>обследований</h6>
                         </div>
                         <div class="image text-center">
-                            <img src="images/ic_description_black_48dp.png" height="100px">
+                            <img src="images/ic_description_black_48dp.png" height="80px">
                         </div>
                     </div>
                 </a>
             </div>
      </div>
-       
+
 <!--./END Second line-->
 </div>
  <!--./MAIN PART-->
@@ -199,8 +246,8 @@
 
 
 
-    
-    
+
+
      <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -214,7 +261,7 @@
     <script>
  // Initialize collapse button
   $(".button-collapse").sideNav();
-  // Initialize collapsible 
+  // Initialize collapsible
   $('.collapsible').collapsible();
 </script>
 </body>
