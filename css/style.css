@@ -429,7 +429,7 @@ hr {
 .breadcrumps {
     float: left;
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
     left: 8rem;
 }
 .noresult > a, .noresult > div.date {
@@ -486,4 +486,9 @@ input[type=text] {
 }
 .thumbnail {
     margin-left: 15px;
+}
+.form-group.col-lg-4, .form-group.col-lg-5 {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
 }
