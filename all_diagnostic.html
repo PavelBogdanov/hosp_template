@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+
+        <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap
+    <link href="css/mdb.css" rel="stylesheet"> -->
+
+    <!-- Material Design Bootstrap Remastered-->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template style -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Sidebar navigation -->
+    <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
+        <div class="hold-place">
+           <a href="index-trial.html" class="waves-effect">Разделы</a>
+        </div>
+
+        <!-- Side navigation links -->
+        <ul class="collapsible collapsible-accordion">
+            <li><a href="personal.html" class="waves-effect waves-light">Персональные данные</a></li>
+            <li><a href="personal.html" class="waves-effect waves-light">Посмотреть карту</a></li>
+            <li><a href="elcard_obsl.html" class="waves-effect waves-light">Найти обследование</a></li>
+            <li><a href="todiagnostic.html" class="waves-effect waves-light">Записать на доп обследование</a></li>
+            <li><a href="recept.html" class="waves-effect waves-light">Выписать рецепт</a></li>
+        </ul>
+            <form class="search-from" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                </div>
+
+            </form>
+        <!--/. Side navigation links -->
+    </ul>
+    <!--/. Sidebar navigation -->
+
+     <!--Navbar-->
+    <nav class="double-navbar navbar navbar-fixed-top unique-color-dark z-depth-1" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <!-- SideNav slide-out button -->
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <!--/. SideNav slide-out button -->
+
+            </div>
+
+            <!-- Navbar Icons -->
+            <ul class="list-inline pull-right text-center">
+                <div class="personalize pull-left">
+                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle">
+                    <p class="user white-text"><b>Волненков Артём Штейнович</b><br><span>Врач терапевт</span></p>
+                </div>
+
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-question"></i><br><span>Помощь</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-cogs"></i><br><span>Настройки</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-sign-out"></i><br><span>Выйти</span></a></li>
+
+            </ul>
+            <!--/. Navbar Icons -->
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+
+  <!--MAIN PART-->
+    <div class="main container fluid">
+         <div class="breadcrumps">
+                <a href="index-trial.html"><i class="fa fa-arrow-left"> Главная</i></a>
+            </div>
+
+
+         <div class="header text-center">
+            <h5>Список направлений</h5>
+        </div>
+    </div>
+
+    <hr>
+    <div class="container obsledovanie">
+    <!--Форма поиска обследования-->
+        <form class="form-inline obsledovanie col-lg-12">
+                <div class="form-group col-lg-4 ">
+                    <label for="i1" class="col-xs-4 control-label ">Поиск по врачам:</label>
+                     <div class="col-xs-4">
+                      <select class="form-control input-sm">
+                        <option>Терапевт</option>
+                        <option>Психиатр</option>
+                        <option>Нарколог</option>
+                        <option>Невролог</option>
+                        <option>Офтальмолог</option>
+                        <option>Отоларинголог</option>
+                        <option>Хирург</option>
+                        <option>Дерматовенеролог</option>
+                        <option>Эндокринолог</option>
+                        <option>Акушер-инеколог</option>
+                      </select>
+                    </div>
+                </div>
+
+             <div class="form-group col-lg-4">
+                    <label for="i2" class="col-sm-4 control-label ">Поиск по Обследованиям:</label>
+                     <div class="col-xs-4">
+                      <select class="form-control input-sm">
+                        <option>Клинический анализ крови</option>
+                        <option>Биохимический скрининг</option>
+                        <option>Клинический анализ мочи</option>
+                        <option>Электрокардиография</option>
+                        <option>Цифровая флюорография</option>
+                        <option>Рентгенография</option>
+                        <option>Бактериологическое</option>
+                        <option>Цитологическое</option>
+                        <option>Маммография</option>
+                      </select>
+                    </div>
+            </div>
+
+             <div class="form-group col-lg-3">
+                <label for="i1" class="col-xs-5 control-label">Поиск по дате:</label>
+                    <div class="col-xs-6">
+                        <input type="date" class="datepicker">
+                    </div>
+                </div>
+
+
+            </form>
+        <!--./Форма поиска обследования-->
+    </div>
+    <hr>
+    <!--Все направления на обследования-->
+    <div class="container">
+        <div class="col-lg-10">
+            <div class="header">
+                <h6 class="left"><b>Список направлений</b></h6>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr><td>Дата</td><td>Врач</td><td>Название</td><td>Причина</td><td>№ документа</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>11.05.2015</td><td>Терапевт</td><td>Биохимический скрининг</td><td>Сильные головные боли</td><td><a>№5028350</a></td></tr>
+                    <tr><td>01.06.2015</td><td>Хирург</td><td>Рентгенография колена</td><td>Подозрение на перелом</td><td><a>№5028350</a></td></tr>
+                    <tr><td>04.11.2015</td><td>Терапевт</td><td>Полный анализ крови</td><td>Плохая свертываемость крови</a></td><td><a>№5028350</a></td></tr>
+                    <tr><td>12.01.2016</td><td>Кардиолог</td><td>Электрокардиография</td><td>Жалобы на отдышку</td><td><a>№5028350</a></td></tr>
+                    <tr><td>24.03.2016</td><td>Эндокринолог</td><td>УЗИ</td><td>Упадок сил</td><td><a>№5028350</a></td></tr>
+                    <tr><td>01.06.2015</td><td>Хирург</td><td>Рентгенография колена</td><td>Подозрение на перелом</td><td><a>№5028350</a></td></tr>
+                    <tr><td>04.11.2015</td><td>Терапевт</td><td>Полный анализ крови</td><td>Плохая свертываемость крови</a></td><td><a>№5028350</a></td></tr>
+                    <tr><td>12.01.2016</td><td>Кардиолог</td><td>Электрокардиография</td><td>Жалобы на отдышку</td><td><a>№5028350</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--./Oбследование-->
+ <!--./MAIN PART-->
+
+<!--FOOTER START-->
+<footer class="navbar navbar-fixed-bottom unique-color-dark">
+    <div class="container">
+        <div class="row white-text">
+            <div class="left">
+                <h5 class="curdate">26 марта 2016 г</h5>
+                <h6 class="curdate">Время: <span><i>12:34:12</i></span></h6>
+                <h6 class="lasttime">До окончания приёмного дня осталось: <span><i>1:40:30</i></span></h6>
+            </div>
+            <div  class="right">
+                <p>Мед сестра:<a href="#"> Лобанова И.В.</a></p>
+                Пациент:<a href="#"> Иванова А.С.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--./FOOTER ENDS-->
+
+
+
+
+
+     <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb-loaded.js"></script>
+    <!--My Scripts -->
+    <script type="text/javascript" src="js/site.js"></script>
+    <script>
+ // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible
+  $('.collapsible').collapsible();
+</script>
+
+
+<script> $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });</script>
+
+
+</body>
+
+</html>
