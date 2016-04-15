@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+
+        <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap
+    <link href="css/mdb.css" rel="stylesheet"> -->
+
+    <!-- Material Design Bootstrap Remastered-->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template style -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Sidebar navigation -->
+    <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
+        <div class="hold-place">
+            <a href="index-trial.html" class="waves-effect">Разделы</a>
+        </div>
+
+        <!-- Side navigation links -->
+        <ul class="collapsible collapsible-accordion">
+            <li><a href="personal.html" class="waves-effect waves-light">Персональные данные</a></li>
+            <li><a href="personal.html" class="waves-effect waves-light">Посмотреть карту</a></li>
+            <li><a href="elcard_obsl.html" class="waves-effect waves-light">Найти обследование</a></li>
+            <li><a href="todiagnostic.html" class="waves-effect waves-light">Записать на доп обследование</a></li>
+            <li><a href="recept.html" class="waves-effect waves-light">Выписать рецепт</a></li>
+        </ul>
+            <form class="search-from" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                </div>
+
+            </form>
+        <!--/. Side navigation links -->
+    </ul>
+    <!--/. Sidebar navigation -->
+
+     <!--Navbar-->
+    <nav class="double-navbar navbar navbar-fixed-top unique-color-dark z-depth-1" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <!-- SideNav slide-out button -->
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <!--/. SideNav slide-out button -->
+
+            </div>
+
+            <!-- Navbar Icons -->
+            <ul class="list-inline pull-right text-center">
+                <div class="personalize pull-left">
+                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle">
+                    <p class="user white-text"><b>Волненков Артём Штейнович</b><br><span>Врач терапевт</span></p>
+                </div>
+
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-question"></i><br><span>Помощь</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-cogs"></i><br><span>Настройки</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-sign-out"></i><br><span>Выйти</span></a></li>
+
+            </ul>
+            <!--/. Navbar Icons -->
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+
+  <!--MAIN PART-->
+    <div class="main container user">
+
+        <div class="header text-center">
+            <div class="breadcrumps">
+                <a href="index-trial.html"><i class="fa fa-arrow-left"> Главная</i></a>
+            </div>
+            <h5>Оформление дела <span class="number">№58393901</span></h5>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 thumbnail">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <td colspan="2"><b>Личные даннные</b></td>
+                    </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Фамилия:<td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Имя:<td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Отчество:<td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Дата рождения</td>
+                         <td><input type="date" placeholder="20-08-1993"></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                         <td><input type="tel" placeholder="8(959)9211212"></td><td></td>
+                    </tr>
+                </table>
+        </div>
+
+            <div class="col-lg-3 col-md-6 thumbnail">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <td colspan="4"><b>Паспортные данные</b></td>
+                    </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Серия:</td><td><input type="tel" class="_short_num_input"></td><td>№:<td><input type="tel" class="short_num_input"></td>
+                    </tr>
+                    <tr>
+                        <td>Дата выдачи</td>
+                         <td colspan="3"><input type="date" placeholder="12-01-2012"></td>
+                    </tr>
+                    <tr>
+                        <td>Место проживания</td><td colspan="3"><textarea></textarea></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-lg-4 col-md-6 thumbnail">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <td colspan="2"><b>Страхование</b></td><td colspan="2"></td>
+                    </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Наименование ОМС</b></td><td colspan="3"><textarea></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Серия:</td><td><input type="tel" class="_short_num_input"></td><td>№:<td><input type="tel" class="short_num_input"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Срок действия(до)</td>
+                         <td><input type="date" placeholder="15-02-2017"></td><td colspan="2"></td>
+                    </tr>
+                </table>
+            </div>
+
+    <div class="col-lg-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td><button class="btn">Оформить договор</button></td>
+                    <td><button class="btn">Печать формы</button></td>
+                    <td><button class="btn">Сохранить</button></td>
+                    <td><button class="btn btn-warning">Удалить личное дело</button></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+ <!--./MAIN PART-->
+
+<!--FOOTER START-->
+<footer class="navbar navbar-fixed-bottom unique-color-dark">
+    <div class="container">
+        <div class="row white-text">
+            <div class="left">
+                <h5 class="curdate">26 марта 2016 г</h5>
+                <h6 class="curdate">Время: <span><i>12:34:12</i></span></h6>
+                <h6 class="lasttime">До окончания приёмного дня осталось: <span><i>1:40:30</i></span></h6>
+            </div>
+            <div  class="right">
+                <p>Мед сестра:<a href="#"> Лобанова И.В.</a></p>
+                Пациент:<a href="#"> Иванова А.С.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--./FOOTER ENDS-->
+
+
+
+
+
+     <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb-loaded.js"></script>
+    <!--My Scripts -->
+    <script type="text/javascript" src="js/site.js"></script>
+    <script>
+ // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible
+  $('.collapsible').collapsible();
+</script>
+</body>
+
+</html>
