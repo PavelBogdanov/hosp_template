@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital</title>
+
+        <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap
+    <link href="css/mdb.css" rel="stylesheet"> -->
+
+    <!-- Material Design Bootstrap Remastered-->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template style -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Sidebar navigation -->
+    <ul id="slide-out" class="side-nav admin-side-nav dark-side-dark">
+        <div class="hold-place">
+            <p class="text-center white-text">Разделы</p>
+        </div>
+
+        <!-- Side navigation links -->
+        <ul class="collapsible collapsible-accordion">
+            <li><a href="patients.html" class="waves-effect waves-light">Список пациентов</a></li>
+            <li><a href="personal.html" class="waves-effect waves-light">Персональные данные</a></li>
+            <li><a href="personal.html" class="waves-effect waves-light">Посмотреть карту</a></li>
+            <li><a href="elcard_obsl.html" class="waves-effect waves-light">Найти обследование</a></li>
+            <li><a href="todiagnostic.html" class="waves-effect waves-light">Записать на доп обследование</a></li>
+            <li><a href="recept.html" class="waves-effect waves-light">Выписать рецепт</a></li>
+        </ul>
+            <form class="search-from" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                </div>
+
+            </form>
+        <!--/. Side navigation links -->
+    </ul>
+    <!--/. Sidebar navigation -->
+
+     <!--Navbar-->
+    <nav class="double-navbar navbar navbar-fixed-top unique-color-dark z-depth-1" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <!-- SideNav slide-out button -->
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <!--/. SideNav slide-out button -->
+
+            </div>
+
+            <!-- Navbar Icons -->
+            <ul class="list-inline pull-right text-center">
+                <div class="personalize pull-left">
+                    <img src="/images/doctor_img.PNG" class="img-responsive img-circle">
+                    <p class="user white-text"><b>Волненков Артём Штейнович</b><br><span>Врач терапевт</span></p>
+                </div>
+
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-question"></i><br><span>Помощь</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-cogs"></i><br><span>Настройки</span></a></li>
+                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-sign-out"></i><br><span>Выйти</span></a></li>
+
+            </ul>
+            <!--/. Navbar Icons -->
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+
+    <!--MAIN PART-->
+    <div class="main container">
+        <div class="header text-center">
+            <h5>Регитратура. Фиксация прихода пациента на приём</h5>
+        </div>
+<!--Поиск пациентов-->
+        <div class="col-lg-12 thumbnail search">
+            <div class="col-lg-1 col-lg-offset-4">Код талона</div>
+            <div class="col-lg-3"><input type="date" placeholder="4295290"/></div>
+
+            <div class="col-lg-1"><button type="button" class="btn-link"><i class="fa fa-search"></i></button></div>
+        </div>
+        <!--./Поиск пациентов-->
+        <!--Таблица с пациентами-->
+        <div class="col-lg-8 col-md-6 col-lg-offset-2">
+
+            <div class="col-lg-12 col-lg-offset-2 thumbnail">
+            <table class="table">
+                <tbody >
+                    <tr class="warning">
+                        <td class="date">9:40</td><td>583973</td><td><a>Иванов Иван Иванович</a></td>
+                            <td><form action="#">
+                                <input type="checkbox" id="test6" checked="" />
+                                <label for="test6"></label>
+                                </form>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-lg-12 col-md-12  col-sm-8 thumbnail">
+             <table class="table">
+                <thead>
+                    <tr>
+                        <td class="date">Время</td><td>Код</td><td>ФИО пациента</td><td>Статус</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date">9:00</td><td>57203</td><td><a>Сергеев Иван Викторович</a>
+                        <td><form action="#">
+                                <input type="checkbox" id="t1" checked="" />
+                                <label for="t1"></label>
+                                </form>
+                            </td>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td class="date">9:00</td><td>236232</td><td><a>Старейников Василий Петрович</a></td>
+                        <td><form action="#">
+                                <input type="checkbox" id="t2" checked="" />
+                                    <label for="t2"></label>
+                                </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="date">9:05</td><td>35773</td><td><a>Иванова Анастасия Сергеевна</a></td>
+                        <td><form action="#">
+                                <input type="checkbox" id="t3" checked="" />
+                                    <label for="t3"></label>
+                                </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="date">9:05</td><td>3573478</td><td><a>Успенская Инна Романовна</a></td>
+                        <td><form action="#">
+                                <p>
+                                    <input type="checkbox" id="t4" checked="" />
+                                    <label for="t4"></label>
+                                </p>
+                                </form>
+                            </td>
+                    </tr>
+                    <tr>
+                       <td class="date">9:10</td><td>357343</td><td><a>Токарев Иван Геннадьевич</a></td>
+                        <td><form action="#">
+                                <p>
+                                    <input type="checkbox" id="t5" checked="" />
+                                    <label for="t5"></label>
+                                </p>
+                                </form>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="date">9:10</td><td>852342</td><td><a>Меркулова Ольга Игоревна</a></td>
+                        <td><form action="#">
+
+                                    <input type="checkbox" id="t6" checked="" />
+                                    <label for="t6"></label>
+
+                                </form>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-12 thumbnail">
+            <div class="col-lg-5"><b>Всего: </b><span>203</span></div>
+            <div class="col-lg-5 right"><b>Пришло: </b><span>41</span></div>
+        </div>
+    </div>
+<!--./Таблица с пациентами-->
+
+
+
+</div>
+ <!--./MAIN PART-->
+
+<!--FOOTER START-->
+<footer class="navbar navbar-fixed-bottom unique-color-dark">
+    <div class="container">
+        <div class="row white-text">
+            <div class="left">
+                <h5 class="curdate">26 марта 2016 г</h5>
+                <h6 class="curdate">Время: <span><i>12:34:12</i></span></h6>
+                <h6 class="lasttime">До окончания приёмного дня осталось: <span><i>1:40:30</i></span></h6>
+            </div>
+            <div  class="right">
+                <p>Мед сестра:<a href="#"> Лобанова И.В.</a></p>
+                Пациент:<a href="#"> Иванова А.С.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--./FOOTER ENDS-->
+
+
+
+
+
+     <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <script type="text/javascript" src="js/mdb-loaded.js"></script>
+    <!--My Scripts -->
+    <script type="text/javascript" src="js/site.js"></script>
+    <script>
+ // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible
+  $('.collapsible').collapsible();
+</script>
+</body>
+
+</html>
