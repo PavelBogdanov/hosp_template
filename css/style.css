@@ -492,3 +492,18 @@ input[type=text] {
     padding-left: 0px;
     margin-right: 0px;
 }
+.user .table {
+    margin-bottom: 0;
+}
+.user input[type="text"], .user input[type="date"], .user input[type="tel"] {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 1.2rem;
+}
+.user textarea {
+    height: 5rem;
+}
+.user table tr>td {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
